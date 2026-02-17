@@ -40,6 +40,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0867-transpose-matrix](https://github.com/fenet-as/Leetcode/tree/master/0867-transpose-matrix) |
 | [0881-boats-to-save-people](https://github.com/fenet-as/Leetcode/tree/master/0881-boats-to-save-people) |
 | [0883-car-fleet](https://github.com/fenet-as/Leetcode/tree/master/0883-car-fleet) |
+| [0885-spiral-matrix-iii](https://github.com/fenet-as/Leetcode/tree/master/0885-spiral-matrix-iii) |
 | [0898-transpose-matrix](https://github.com/fenet-as/Leetcode/tree/master/0898-transpose-matrix) |
 | [0904-fruit-into-baskets](https://github.com/fenet-as/Leetcode/tree/master/0904-fruit-into-baskets) |
 | [0930-binary-subarrays-with-sum](https://github.com/fenet-as/Leetcode/tree/master/0930-binary-subarrays-with-sum) |
@@ -304,6 +305,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0661-image-smoother](https://github.com/fenet-as/Leetcode/tree/master/0661-image-smoother) |
 | [0832-flipping-an-image](https://github.com/fenet-as/Leetcode/tree/master/0832-flipping-an-image) |
 | [0867-transpose-matrix](https://github.com/fenet-as/Leetcode/tree/master/0867-transpose-matrix) |
+| [0885-spiral-matrix-iii](https://github.com/fenet-as/Leetcode/tree/master/0885-spiral-matrix-iii) |
 | [0898-transpose-matrix](https://github.com/fenet-as/Leetcode/tree/master/0898-transpose-matrix) |
 | [1351-count-negative-numbers-in-a-sorted-matrix](https://github.com/fenet-as/Leetcode/tree/master/1351-count-negative-numbers-in-a-sorted-matrix) |
 | [1886-determine-whether-matrix-can-be-obtained-by-rotation](https://github.com/fenet-as/Leetcode/tree/master/1886-determine-whether-matrix-can-be-obtained-by-rotation) |
@@ -315,6 +317,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0832-flipping-an-image](https://github.com/fenet-as/Leetcode/tree/master/0832-flipping-an-image) |
 | [0867-transpose-matrix](https://github.com/fenet-as/Leetcode/tree/master/0867-transpose-matrix) |
 | [0874-backspace-string-compare](https://github.com/fenet-as/Leetcode/tree/master/0874-backspace-string-compare) |
+| [0885-spiral-matrix-iii](https://github.com/fenet-as/Leetcode/tree/master/0885-spiral-matrix-iii) |
 | [0898-transpose-matrix](https://github.com/fenet-as/Leetcode/tree/master/0898-transpose-matrix) |
 | [0946-validate-stack-sequences](https://github.com/fenet-as/Leetcode/tree/master/0946-validate-stack-sequences) |
 | [1802-number-of-students-unable-to-eat-lunch](https://github.com/fenet-as/Leetcode/tree/master/1802-number-of-students-unable-to-eat-lunch) |
