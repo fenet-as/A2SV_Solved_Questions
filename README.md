@@ -18,6 +18,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/fenet-as/Leetcode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0128-longest-consecutive-sequence](https://github.com/fenet-as/Leetcode/tree/master/0128-longest-consecutive-sequence) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/fenet-as/Leetcode/tree/master/0150-evaluate-reverse-polish-notation) |
+| [0179-largest-number](https://github.com/fenet-as/Leetcode/tree/master/0179-largest-number) |
 | [0189-rotate-array](https://github.com/fenet-as/Leetcode/tree/master/0189-rotate-array) |
 | [0209-minimum-size-subarray-sum](https://github.com/fenet-as/Leetcode/tree/master/0209-minimum-size-subarray-sum) |
 | [0217-contains-duplicate](https://github.com/fenet-as/Leetcode/tree/master/0217-contains-duplicate) |
@@ -139,6 +140,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0049-group-anagrams](https://github.com/fenet-as/Leetcode/tree/master/0049-group-anagrams) |
 | [0075-sort-colors](https://github.com/fenet-as/Leetcode/tree/master/0075-sort-colors) |
+| [0179-largest-number](https://github.com/fenet-as/Leetcode/tree/master/0179-largest-number) |
 | [0217-contains-duplicate](https://github.com/fenet-as/Leetcode/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/fenet-as/Leetcode/tree/master/0242-valid-anagram) |
 | [0268-missing-number](https://github.com/fenet-as/Leetcode/tree/master/0268-missing-number) |
@@ -174,6 +176,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0049-group-anagrams](https://github.com/fenet-as/Leetcode/tree/master/0049-group-anagrams) |
 | [0058-length-of-last-word](https://github.com/fenet-as/Leetcode/tree/master/0058-length-of-last-word) |
 | [0071-simplify-path](https://github.com/fenet-as/Leetcode/tree/master/0071-simplify-path) |
+| [0179-largest-number](https://github.com/fenet-as/Leetcode/tree/master/0179-largest-number) |
 | [0242-valid-anagram](https://github.com/fenet-as/Leetcode/tree/master/0242-valid-anagram) |
 | [0290-word-pattern](https://github.com/fenet-as/Leetcode/tree/master/0290-word-pattern) |
 | [0344-reverse-string](https://github.com/fenet-as/Leetcode/tree/master/0344-reverse-string) |
@@ -407,6 +410,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Greedy
 |  |
 | ------- |
+| [0179-largest-number](https://github.com/fenet-as/Leetcode/tree/master/0179-largest-number) |
 | [0455-assign-cookies](https://github.com/fenet-as/Leetcode/tree/master/0455-assign-cookies) |
 | [0561-array-partition](https://github.com/fenet-as/Leetcode/tree/master/0561-array-partition) |
 | [0680-valid-palindrome-ii](https://github.com/fenet-as/Leetcode/tree/master/0680-valid-palindrome-ii) |
