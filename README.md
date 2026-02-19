@@ -55,6 +55,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1351-count-negative-numbers-in-a-sorted-matrix](https://github.com/fenet-as/Leetcode/tree/master/1351-count-negative-numbers-in-a-sorted-matrix) |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/fenet-as/Leetcode/tree/master/1365-how-many-numbers-are-smaller-than-the-current-number) |
 | [1482-how-many-numbers-are-smaller-than-the-current-number](https://github.com/fenet-as/Leetcode/tree/master/1482-how-many-numbers-are-smaller-than-the-current-number) |
+| [1561-maximum-number-of-coins-you-can-get](https://github.com/fenet-as/Leetcode/tree/master/1561-maximum-number-of-coins-you-can-get) |
 | [1570-final-prices-with-a-special-discount-in-a-shop](https://github.com/fenet-as/Leetcode/tree/master/1570-final-prices-with-a-special-discount-in-a-shop) |
 | [1580-shuffle-the-array](https://github.com/fenet-as/Leetcode/tree/master/1580-shuffle-the-array) |
 | [1603-running-sum-of-1d-array](https://github.com/fenet-as/Leetcode/tree/master/1603-running-sum-of-1d-array) |
@@ -159,6 +160,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1217-relative-sort-array](https://github.com/fenet-as/Leetcode/tree/master/1217-relative-sort-array) |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/fenet-as/Leetcode/tree/master/1365-how-many-numbers-are-smaller-than-the-current-number) |
 | [1482-how-many-numbers-are-smaller-than-the-current-number](https://github.com/fenet-as/Leetcode/tree/master/1482-how-many-numbers-are-smaller-than-the-current-number) |
+| [1561-maximum-number-of-coins-you-can-get](https://github.com/fenet-as/Leetcode/tree/master/1561-maximum-number-of-coins-you-can-get) |
 | [1657-determine-if-two-strings-are-close](https://github.com/fenet-as/Leetcode/tree/master/1657-determine-if-two-strings-are-close) |
 | [1683-maximum-number-of-coins-you-can-get](https://github.com/fenet-as/Leetcode/tree/master/1683-maximum-number-of-coins-you-can-get) |
 | [1752-arithmetic-subarrays](https://github.com/fenet-as/Leetcode/tree/master/1752-arithmetic-subarrays) |
@@ -378,6 +380,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0633-sum-of-square-numbers](https://github.com/fenet-as/Leetcode/tree/master/0633-sum-of-square-numbers) |
 | [0976-largest-perimeter-triangle](https://github.com/fenet-as/Leetcode/tree/master/0976-largest-perimeter-triangle) |
 | [1247-minimum-swaps-to-make-strings-equal](https://github.com/fenet-as/Leetcode/tree/master/1247-minimum-swaps-to-make-strings-equal) |
+| [1561-maximum-number-of-coins-you-can-get](https://github.com/fenet-as/Leetcode/tree/master/1561-maximum-number-of-coins-you-can-get) |
 | [1683-maximum-number-of-coins-you-can-get](https://github.com/fenet-as/Leetcode/tree/master/1683-maximum-number-of-coins-you-can-get) |
 | [2165-smallest-value-of-the-rearranged-number](https://github.com/fenet-as/Leetcode/tree/master/2165-smallest-value-of-the-rearranged-number) |
 | [2284-smallest-value-of-the-rearranged-number](https://github.com/fenet-as/Leetcode/tree/master/2284-smallest-value-of-the-rearranged-number) |
@@ -421,11 +424,13 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0969-pancake-sorting](https://github.com/fenet-as/Leetcode/tree/master/0969-pancake-sorting) |
 | [0976-largest-perimeter-triangle](https://github.com/fenet-as/Leetcode/tree/master/0976-largest-perimeter-triangle) |
 | [1247-minimum-swaps-to-make-strings-equal](https://github.com/fenet-as/Leetcode/tree/master/1247-minimum-swaps-to-make-strings-equal) |
+| [1561-maximum-number-of-coins-you-can-get](https://github.com/fenet-as/Leetcode/tree/master/1561-maximum-number-of-coins-you-can-get) |
 | [1683-maximum-number-of-coins-you-can-get](https://github.com/fenet-as/Leetcode/tree/master/1683-maximum-number-of-coins-you-can-get) |
 | [2486-append-characters-to-string-to-make-subsequence](https://github.com/fenet-as/Leetcode/tree/master/2486-append-characters-to-string-to-make-subsequence) |
 ## Game Theory
 |  |
 | ------- |
+| [1561-maximum-number-of-coins-you-can-get](https://github.com/fenet-as/Leetcode/tree/master/1561-maximum-number-of-coins-you-can-get) |
 | [1683-maximum-number-of-coins-you-can-get](https://github.com/fenet-as/Leetcode/tree/master/1683-maximum-number-of-coins-you-can-get) |
 ## Ordered Set
 |  |
