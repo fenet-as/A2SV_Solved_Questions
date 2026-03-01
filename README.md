@@ -53,6 +53,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0946-validate-stack-sequences](https://github.com/fenet-as/Leetcode/tree/master/0946-validate-stack-sequences) |
 | [0969-pancake-sorting](https://github.com/fenet-as/Leetcode/tree/master/0969-pancake-sorting) |
 | [0976-largest-perimeter-triangle](https://github.com/fenet-as/Leetcode/tree/master/0976-largest-perimeter-triangle) |
+| [0992-subarrays-with-k-different-integers](https://github.com/fenet-as/Leetcode/tree/master/0992-subarrays-with-k-different-integers) |
 | [1137-height-checker](https://github.com/fenet-as/Leetcode/tree/master/1137-height-checker) |
 | [1217-relative-sort-array](https://github.com/fenet-as/Leetcode/tree/master/1217-relative-sort-array) |
 | [1299-replace-elements-with-greatest-element-on-right-side](https://github.com/fenet-as/Leetcode/tree/master/1299-replace-elements-with-greatest-element-on-right-side) |
@@ -112,6 +113,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0791-custom-sort-string](https://github.com/fenet-as/Leetcode/tree/master/0791-custom-sort-string) |
 | [0904-fruit-into-baskets](https://github.com/fenet-as/Leetcode/tree/master/0904-fruit-into-baskets) |
 | [0930-binary-subarrays-with-sum](https://github.com/fenet-as/Leetcode/tree/master/0930-binary-subarrays-with-sum) |
+| [0992-subarrays-with-k-different-integers](https://github.com/fenet-as/Leetcode/tree/master/0992-subarrays-with-k-different-integers) |
 | [1217-relative-sort-array](https://github.com/fenet-as/Leetcode/tree/master/1217-relative-sort-array) |
 | [1347-minimum-number-of-steps-to-make-two-strings-anagram](https://github.com/fenet-as/Leetcode/tree/master/1347-minimum-number-of-steps-to-make-two-strings-anagram) |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/fenet-as/Leetcode/tree/master/1365-how-many-numbers-are-smaller-than-the-current-number) |
@@ -318,6 +320,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0713-subarray-product-less-than-k](https://github.com/fenet-as/Leetcode/tree/master/0713-subarray-product-less-than-k) |
 | [0904-fruit-into-baskets](https://github.com/fenet-as/Leetcode/tree/master/0904-fruit-into-baskets) |
 | [0930-binary-subarrays-with-sum](https://github.com/fenet-as/Leetcode/tree/master/0930-binary-subarrays-with-sum) |
+| [0992-subarrays-with-k-different-integers](https://github.com/fenet-as/Leetcode/tree/master/0992-subarrays-with-k-different-integers) |
 | [1208-get-equal-substrings-within-budget](https://github.com/fenet-as/Leetcode/tree/master/1208-get-equal-substrings-within-budget) |
 | [1343-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold](https://github.com/fenet-as/Leetcode/tree/master/1343-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold) |
 | [1984-minimum-difference-between-highest-and-lowest-of-k-scores](https://github.com/fenet-as/Leetcode/tree/master/1984-minimum-difference-between-highest-and-lowest-of-k-scores) |
@@ -371,6 +374,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0387-first-unique-character-in-a-string](https://github.com/fenet-as/Leetcode/tree/master/0387-first-unique-character-in-a-string) |
 | [0451-sort-characters-by-frequency](https://github.com/fenet-as/Leetcode/tree/master/0451-sort-characters-by-frequency) |
 | [0561-array-partition](https://github.com/fenet-as/Leetcode/tree/master/0561-array-partition) |
+| [0992-subarrays-with-k-different-integers](https://github.com/fenet-as/Leetcode/tree/master/0992-subarrays-with-k-different-integers) |
 | [1137-height-checker](https://github.com/fenet-as/Leetcode/tree/master/1137-height-checker) |
 | [1217-relative-sort-array](https://github.com/fenet-as/Leetcode/tree/master/1217-relative-sort-array) |
 | [1347-minimum-number-of-steps-to-make-two-strings-anagram](https://github.com/fenet-as/Leetcode/tree/master/1347-minimum-number-of-steps-to-make-two-strings-anagram) |
