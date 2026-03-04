@@ -1,76 +1,46 @@
 class Solution:
     def maxSumRangeQuery(self, nums: List[int], requests: List[List[int]]) -> int:
-        '''
-         [1,2,3,4,5]
-          0 1 2 3 4
+        ps = [0]*len(nums)
 
-         [0,1,3,6,10,15]
+        n = len(nums)
+        for l,r in requests:
+            ps[l] += 1
+            if r+1 < n:
+                ps[r+1] -= 1
 
-         2-4
-         ps = ps[j+1] - ps[i]
-              15 - 3 
-        '''
-        
-        ind = [0] * (len(nums)+1)
+        for i in range(1,n):
+            ps[i] += ps[i-1]
 
-        # for es,ee in requests:
-        #     for j in range(es,ee+1):
-        #         ind[j] += 1
-        for es,ee in requests:
-            ind[es] += 1
-            ind[ee+1] -= 1
-        
-        indx = []
 
-        cs = 0
-        for e in ind:
-            cs += e
-            indx.append(cs)
+        for i in range(n):
+            v = ps[i]
+            ps[i] = (i,v)
+
+        ps.sort(key = lambda x:x[1])
+        nums.sort()
+        # print(ps)
+        # print(nums)
 
 
         
 
-        
+        rs = [0]*n
 
-        indz = []
-        for i,v in enumerate(indx):
-            indz.append((i,v))
-        indz.sort(reverse=True, key = lambda x: x[1])
+        for i in range(n):
+            ind = ps[i][0]
+            v = nums[i]
+            rs[ind] = v
 
-        nums.sort(reverse=True)
-
-
-        za = []
-        for i in range(len(nums)):
-            ie = indz[i]
-
-            za.append((ie[0],nums[i]))
+        # print(rs)
 
 
-        nnums = [0]*len(nums)
+        for i in range(1,n):
+            rs[i] += rs[i-1]
 
-        for e in za:
-            ind = e[0]
-            val = e[1]
-            nnums[ind] = val
-        
-        
-
-
-
-        ps = [0]
-
-        cs = 0
-        for e in nnums:
-            cs += e
-            ps.append(cs)
-        
         sm = 0
 
-        for si,li in requests:
-
-            csm = ps[li+1] - ps[si]
-            sm += csm
-
-        return (sm% (10**9 + 7))
-
+        for l,r in requests:
+            e = rs[r]
+            s = 0 if l == 0 else rs[l-1]
+            sm += e - s
+        return sm%(10**9+7)
