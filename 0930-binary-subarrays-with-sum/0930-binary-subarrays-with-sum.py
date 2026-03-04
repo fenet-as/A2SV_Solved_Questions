@@ -1,32 +1,17 @@
 class Solution:
     def numSubarraysWithSum(self, nums: List[int], goal: int) -> int:
-        '''
+        
+        hm = defaultdict(int)
+        hm[0] += 1
 
-        sm[j] - sm[i] = k
+        for i in range(1,len(nums)):
+            nums[i] += nums[i-1]
 
-        sm[i] --hm
-
-        sm[j] -k in hm, ct ++
-        '''
-
-        ps = [0]
-
-        cs = 0
+        ct = 0
 
         for e in nums:
-            cs += e
-            ps.append(cs)
-        
-
-        hm = defaultdict(int)
-        ct = 0
-        for e in ps:
-            if e-goal in hm:
+            if hm[e - goal] > 0:
                 ct += hm[e-goal]
-            hm[e] += 1
-
             
+            hm[e] += 1
         return ct
-
-
-
