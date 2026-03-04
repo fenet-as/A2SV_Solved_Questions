@@ -66,6 +66,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1561-maximum-number-of-coins-you-can-get](https://github.com/fenet-as/Leetcode/tree/master/1561-maximum-number-of-coins-you-can-get) |
 | [1570-final-prices-with-a-special-discount-in-a-shop](https://github.com/fenet-as/Leetcode/tree/master/1570-final-prices-with-a-special-discount-in-a-shop) |
 | [1580-shuffle-the-array](https://github.com/fenet-as/Leetcode/tree/master/1580-shuffle-the-array) |
+| [1589-maximum-sum-obtained-of-any-permutation](https://github.com/fenet-as/Leetcode/tree/master/1589-maximum-sum-obtained-of-any-permutation) |
 | [1603-running-sum-of-1d-array](https://github.com/fenet-as/Leetcode/tree/master/1603-running-sum-of-1d-array) |
 | [1646-kth-missing-positive-number](https://github.com/fenet-as/Leetcode/tree/master/1646-kth-missing-positive-number) |
 | [1683-maximum-number-of-coins-you-can-get](https://github.com/fenet-as/Leetcode/tree/master/1683-maximum-number-of-coins-you-can-get) |
@@ -182,6 +183,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/fenet-as/Leetcode/tree/master/1365-how-many-numbers-are-smaller-than-the-current-number) |
 | [1482-how-many-numbers-are-smaller-than-the-current-number](https://github.com/fenet-as/Leetcode/tree/master/1482-how-many-numbers-are-smaller-than-the-current-number) |
 | [1561-maximum-number-of-coins-you-can-get](https://github.com/fenet-as/Leetcode/tree/master/1561-maximum-number-of-coins-you-can-get) |
+| [1589-maximum-sum-obtained-of-any-permutation](https://github.com/fenet-as/Leetcode/tree/master/1589-maximum-sum-obtained-of-any-permutation) |
 | [1657-determine-if-two-strings-are-close](https://github.com/fenet-as/Leetcode/tree/master/1657-determine-if-two-strings-are-close) |
 | [1683-maximum-number-of-coins-you-can-get](https://github.com/fenet-as/Leetcode/tree/master/1683-maximum-number-of-coins-you-can-get) |
 | [1752-arithmetic-subarrays](https://github.com/fenet-as/Leetcode/tree/master/1752-arithmetic-subarrays) |
@@ -424,6 +426,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0930-binary-subarrays-with-sum](https://github.com/fenet-as/Leetcode/tree/master/0930-binary-subarrays-with-sum) |
 | [1208-get-equal-substrings-within-budget](https://github.com/fenet-as/Leetcode/tree/master/1208-get-equal-substrings-within-budget) |
 | [1413-minimum-value-to-get-positive-step-by-step-sum](https://github.com/fenet-as/Leetcode/tree/master/1413-minimum-value-to-get-positive-step-by-step-sum) |
+| [1589-maximum-sum-obtained-of-any-permutation](https://github.com/fenet-as/Leetcode/tree/master/1589-maximum-sum-obtained-of-any-permutation) |
 | [1603-running-sum-of-1d-array](https://github.com/fenet-as/Leetcode/tree/master/1603-running-sum-of-1d-array) |
 | [1769-minimum-number-of-operations-to-move-all-balls-to-each-box](https://github.com/fenet-as/Leetcode/tree/master/1769-minimum-number-of-operations-to-move-all-balls-to-each-box) |
 | [1895-minimum-number-of-operations-to-move-all-balls-to-each-box](https://github.com/fenet-as/Leetcode/tree/master/1895-minimum-number-of-operations-to-move-all-balls-to-each-box) |
@@ -460,6 +463,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0976-largest-perimeter-triangle](https://github.com/fenet-as/Leetcode/tree/master/0976-largest-perimeter-triangle) |
 | [1247-minimum-swaps-to-make-strings-equal](https://github.com/fenet-as/Leetcode/tree/master/1247-minimum-swaps-to-make-strings-equal) |
 | [1561-maximum-number-of-coins-you-can-get](https://github.com/fenet-as/Leetcode/tree/master/1561-maximum-number-of-coins-you-can-get) |
+| [1589-maximum-sum-obtained-of-any-permutation](https://github.com/fenet-as/Leetcode/tree/master/1589-maximum-sum-obtained-of-any-permutation) |
 | [1683-maximum-number-of-coins-you-can-get](https://github.com/fenet-as/Leetcode/tree/master/1683-maximum-number-of-coins-you-can-get) |
 | [2486-append-characters-to-string-to-make-subsequence](https://github.com/fenet-as/Leetcode/tree/master/2486-append-characters-to-string-to-make-subsequence) |
 ## Game Theory
