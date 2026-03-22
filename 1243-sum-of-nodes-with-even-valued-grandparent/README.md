@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/sum-of-nodes-with-even-valued-grandparent">1243. Sum of Nodes with Even-Valued Grandparent</a></h2><h3>Medium</h3><hr><p>Given the <code>root</code> of a binary tree, return <em>the sum of values of nodes with an <strong>even-valued grandparent</strong></em>. If there are no nodes with an <strong>even-valued grandparent</strong>, return <code>0</code>.</p>
+<h2><a href="https://leetcode.com/problems/sum-of-nodes-with-even-valued-grandparent">Sum of Nodes with Even-Valued Grandparent</a></h2> <img src='https://img.shields.io/badge/Difficulty-Medium-orange' alt='Difficulty: Medium' /><hr><p>Given the <code>root</code> of a binary tree, return <em>the sum of values of nodes with an <strong>even-valued grandparent</strong></em>. If there are no nodes with an <strong>even-valued grandparent</strong>, return <code>0</code>.</p>
 
 <p>A <strong>grandparent</strong> of a node is the parent of its parent if it exists.</p>
 
