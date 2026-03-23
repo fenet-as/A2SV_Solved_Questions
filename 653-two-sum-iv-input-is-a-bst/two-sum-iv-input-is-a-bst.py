@@ -7,19 +7,19 @@
 class Solution:
     def findTarget(self, root: Optional[TreeNode], k: int) -> bool:
         
-        hm = set()
+        seen = set()
 
         def dfs(node,k):
             if not node:
                 return 
 
-            if k - node.val in hm:
+            if k - node.val in seen:
                 return True
-            hm.add(node.val)
+            seen.add(node.val)
 
-            l = dfs(node.left,k)
-            r = dfs(node.right,k)
-            return l or r
+            left = dfs(node.left,k)
+            right = dfs(node.right,k)
+            return left or right
 
         res = dfs(root,k)
 
