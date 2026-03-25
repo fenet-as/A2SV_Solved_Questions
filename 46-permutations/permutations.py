@@ -2,20 +2,23 @@ class Solution:
     def permute(self, nums: List[int]) -> List[List[int]]:
         
         res = []
-
-        def FindPerm(path):
+        path = []
+        seen = [False]*len(nums)
+        def FindPerm():
             if len(path) == len(nums):
                 res.append(path[:])
                 return
 
             for j in range(len(nums)):
-                if nums[j] in  path:
+                if seen[j]:
                     continue
 
+                seen[j] = True
                 path.append(nums[j])
-                FindPerm(path)
+                FindPerm()
                 path.pop()
+                seen[j] = False
             return
 
-        FindPerm([]) 
+        FindPerm() 
         return res   
