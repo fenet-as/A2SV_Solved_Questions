@@ -3,18 +3,20 @@ class Solution:
         
         res = []
 
-        def helper(path,i,k):
+        def helper(path,i):
+
+            if i > n+1:
+                return 
+
             if len(path) == k:
                 res.append(path[:])
                 return
-
+  
+            path.append(i)
+            helper(path,i+1)
+            path.pop()
             
-            for j in range(i,n+1):
-                path.append(j)
-                helper(path,j+1,k)
-                path.pop()
+            helper(path,i+1)
 
-            return
-
-        helper([],1,k)
+        helper([],1)
         return res
