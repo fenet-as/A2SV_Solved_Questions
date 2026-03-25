@@ -8,12 +8,11 @@ class Solution:
                 res.append(path[:])
                 return 
 
-            # if path not in res:
-            #     res.append(path[:])
+    
+            res.append(path[:])
 
             for j in range(i,len(nums)):
-                if path not in res:
-                    res.append(path[:])
+           
                 path.append(nums[j])
                 helper(j+1)
                 path.pop()
