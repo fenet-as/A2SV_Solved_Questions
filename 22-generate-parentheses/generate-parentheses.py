@@ -2,51 +2,31 @@ class Solution:
     def generateParenthesis(self, n: int) -> List[str]:
         
 
-        hm = {"(":0,")":0}
         path = []
         res = []
 
-        def check(arr):
-            stack = []
-
-            for i in range(len(arr)):
-                if stack: 
-                    if arr[i] == "(":
-                        stack.append(arr[i])
-                    else:
-                        if stack and stack[-1] == "(":
-                            stack.pop()
-                        else:
-                            return False
-                else:
-                    stack.append(arr[i])
-            if stack:
-                return False
-            return True
-
                     
-        def helper():
+        def helper(hml,hmr):
             if len(path) == 2*n:
-                if check(path):
-                    res.append(''.join(path[:]))
+                res.append(''.join(path[:]))
                 return 
             
-            if hm["("] < n:
-                hm["("] += 1
+            if hml < n:
+                hml += 1
                 path.append("(")
-                helper()
+                helper(hml,hmr)
                 path.pop()
-                hm["("] -= 1
+                hml -= 1
 
-            if hm[")"] < n:
-                hm[")"] += 1
+            if hmr < hml:
+                hmr += 1
                 path.append(")")
-                helper()
+                helper(hml,hmr)
                 path.pop()
-                hm[")"] -= 1
+                hmr -= 1
             return 
 
-        helper()
+        helper(0,0)
         return res
             
 
