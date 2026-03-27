@@ -2,15 +2,16 @@ class Solution:
     def exist(self, board: List[List[str]], word: str) -> bool:
         
 
-        path = set()
+        
         def search(i,j,m,row,col,word):
             if m == len(word):
                 return True
 
-            if path and (i,j) in path:
+            if board[i][j] == "#":
                 return False
             if board[i][j] == word[m]:
-                path.add((i,j))
+                temp = board[i][j]
+                board[i][j] = "#"
                 m += 1
                 if m == len(word):
                     return True
@@ -28,7 +29,7 @@ class Solution:
                     if search(i,j-1,m,row,col,word):
                         return True
                 
-                path.remove((i,j))
+                board[i][j] = temp
             return False
 
             
