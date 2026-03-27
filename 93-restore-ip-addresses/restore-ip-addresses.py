@@ -13,13 +13,8 @@ class Solution:
                 return 
 
            
-            for j in range(i,len(s)):
-                if (len(s)-j) / (4-len(path)) <= 0 or (len(s)-j) / (4-len(path)) > 3:
-                    continue
-
+            for j in range(i,min(i+4,len(s))):
                 curr = s[i:j+1]
-                if len(curr) > 3:
-                    break
                 if len(curr) > 1 and s[i] == "0":
                     break
                 if int(curr) > 255:
