@@ -4,36 +4,45 @@ class Solution:
         seen = []
         res = []
 
-        def check(arr):
-            nonlocal n
-            for i in range(n):
-                for j in range(i+1,n):
-                    i1,i2 = arr[i]
-                    j1,j2 = arr[j]
-                    if abs(i1-j1) == abs(j2-i2):
-                        return False
-            return True
-
-
-
+        # def check(arr):
+        #     nonlocal n
+        #     for i in range(n):
+        #         for j in range(i+1,n):
+        #             i1,i2 = arr[i]
+        #             j1,j2 = arr[j]
+        #             if abs(i1-j1) == abs(j2-i2):
+        #                 return False
+        #     return True
+        
         def explore():
             
             if len(seen) == n:
                 act = []
                 for i in range(len(seen)):
                     act.append([i,seen[i]])
-
-                if check(act):
-                    res.append(act[:])
-                # print("res",res)
-                # print("seen",seen)
+                res.append(act[:])
                 return 
 
             
             for j in range(n):
                 if j in seen:
                     continue
+
+                cr = len(seen)
+                cc = j
+                valid = True
+
+                for i in range(len(seen)):
+                    pc = seen[i]
+                    pr = i
+                    if abs(pr-cr) == abs(pc-cc):
+                        valid = False
+                        break
+                if not valid:
+                    continue
+
                 seen.append(j)
+                
                 # print("seen",seen)
                 explore()
                 seen.pop()
