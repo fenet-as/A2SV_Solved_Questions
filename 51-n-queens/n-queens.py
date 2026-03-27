@@ -4,16 +4,7 @@ class Solution:
         seen = []
         res = []
 
-        # def check(arr):
-        #     nonlocal n
-        #     for i in range(n):
-        #         for j in range(i+1,n):
-        #             i1,i2 = arr[i]
-        #             j1,j2 = arr[j]
-        #             if abs(i1-j1) == abs(j2-i2):
-        #                 return False
-        #     return True
-        
+
         def explore():
             
             if len(seen) == n:
