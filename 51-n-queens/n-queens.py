@@ -1,5 +1,6 @@
 class Solution:
     def solveNQueens(self, n: int) -> List[List[str]]:
+        #code
         
         seen = []
         res = []
@@ -56,4 +57,3 @@ class Solution:
                 
 
         return ans
-
