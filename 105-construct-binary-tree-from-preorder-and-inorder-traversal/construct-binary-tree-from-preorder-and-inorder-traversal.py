@@ -7,29 +7,26 @@
 class Solution:
     def buildTree(self, preorder: List[int], inorder: List[int]) -> Optional[TreeNode]:
 
-
         find_ind = {}
-
-    
         for i,v in enumerate(inorder):
             find_ind[v] = i
-                  
+
+
 
         i = 0
-        def build(l,r):
+        def build(left,right):
             nonlocal i
-            if l > r:
+            if left > right:
                 return None
 
+            ind = find_ind[preorder[i]]
             node = TreeNode(preorder[i])
 
-            pt = find_ind[preorder[i]]
             i += 1
-  
-            node.left = build(l,pt-1)
-            node.right = build(pt+1,r)
+
+            node.left = build(left,ind-1)
+            node.right = build(ind+1,right)
 
             return node
 
-        return build(0,len(inorder)-1)
-
+        return build(0,len(preorder)-1) 
