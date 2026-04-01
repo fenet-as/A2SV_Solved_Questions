@@ -26,7 +26,7 @@ class Solution:
         def possible(k):
             t = 0
             for e in piles:
-                t += (e + k - 1) // k   # ceil division
+                t += ceil(e/k)  # ceil division
 
             return t <= h
 
