@@ -4,17 +4,17 @@
 class Solution:
     def firstBadVersion(self, n: int) -> int:
         
-        i = 1
-        j = n
+        left = 1
+        right = n
         ans = -1
 
-        while i <= j:
-            m = i + (j-i)//2
 
-            if isBadVersion(m):
-                ans = m
-                j = m-1
+        while left <= right:
+            mid = left + (right-left)//2
+
+            if isBadVersion(mid):
+                ans = mid
+                right = mid-1
             else:
-                i = m +1
-
-        return ans 
+                left = mid + 1
+        return ans
