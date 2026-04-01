@@ -2,7 +2,7 @@ class Solution:
     def predictTheWinner(self, nums: List[int]) -> bool:
         from functools import lru_cache
 
-        @lru_cache(None)
+        # @lru_cache(None)
         def explore(i, j):
             if i == j:
                 return nums[i]
