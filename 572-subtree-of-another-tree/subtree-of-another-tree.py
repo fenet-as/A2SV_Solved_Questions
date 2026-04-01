@@ -30,15 +30,9 @@ class Solution:
                 return False
 
             left = explore(node.left, sub)
-
-            if left:
-                return True
             right = explore(node.right,sub)
 
-            if right:
-                return True
-
-            return False
+            return left or right
 
    
         
