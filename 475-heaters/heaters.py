@@ -17,15 +17,12 @@ class Solution:
                 ind = bisect.bisect(heaters,e)
                 if ind == 0:
                     rng = heaters[ind] - e
-                    if rng > r:
-                        return False
                 elif ind == len(heaters):
                     rng = e - heaters[ind-1] 
-                    if rng > r:
-                        return False
                 else:
-                    if e - heaters[ind-1] > r and heaters[ind] - e > r:
-                        return False 
+                    rng = min(e - heaters[ind-1],heaters[ind] - e)
+                if rng > r:
+                    return False 
 
             return True
         ans = -1
