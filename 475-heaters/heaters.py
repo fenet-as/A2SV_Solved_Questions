@@ -1,29 +1,43 @@
 import bisect
 
 class Solution:
-    def findRadius(self, houses: list[int], heaters: list[int]) -> int:
-        # Step 1: Sort both arrays
-        houses.sort()
+    def findRadius(self, houses: List[int], heaters: List[int]) -> int:
+        
+
+        left = 0
+        right = max(max(houses),max(heaters))
+
+      
+
         heaters.sort()
-        
-        radius = 0
-        
-        # Step 2: For each house, find the nearest heater
-        for house in houses:
-            # Find insertion point
-            ind = bisect.bisect_left(heaters, house)
-            
-            if ind == 0:
-                # House is before all heaters
-                closest = heaters[0] - house
-            elif ind == len(heaters):
-                # House is after all heaters
-                closest = house - heaters[-1]
+
+        def possible(r):
+
+            for e in houses:
+                ind = bisect.bisect(heaters,e)
+                if ind == 0 and ind < len(heaters):
+                    rng = heaters[ind] - e
+                    if rng > r:
+                        return False
+                elif ind == len(heaters):
+                    rng = e - heaters[ind-1] 
+                    if rng > r:
+                        return False
+                else:
+                    if e - heaters[ind-1] > r and heaters[ind] - e> r:
+                        return False 
+
+            return True
+        ans = -1
+
+
+        while left <= right:
+            mid = left + (right -left )//2
+
+            if possible(mid):
+                ans = mid
+                right = mid -1
             else:
-                # House is between two heaters
-                closest = min(house - heaters[ind - 1], heaters[ind] - house)
-            
-            # Step 3: Update the required radius
-            radius = max(radius, closest)
+                left = mid + 1
+        return ans
         
-        return radius
