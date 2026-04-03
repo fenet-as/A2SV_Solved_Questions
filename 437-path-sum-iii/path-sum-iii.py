@@ -8,64 +8,29 @@ class Solution:
     def pathSum(self, root: Optional[TreeNode], targetSum: int) -> int:
 
         ct = 0
-        path = []
-        def move(node,cs):
+
+        def dfs(node,cs):
             nonlocal ct
             if not node:
                 return 
-            # if not node.left and not node.right:
-            #     cs += node.val
-            #     path.append(node.val)
-            #     print(path)
 
-            # if cs == targetSum:
-            #     ct += 1
-
-                # cs -= 1
-                # path.pop()
-                # print(path)
-                
-
-                # # print(path)
-                # print("leaf") 
-
-                # return 
-
-            if cs+node.val == targetSum:
+            cs += node.val
+            if cs == targetSum:
                 ct += 1
 
-            # path.append(node.val)
-            # cs += node.val
-            # print(path)
-            move(node.left,cs+node.val)
-            # cs -= node.val
-            # path.pop()
-            # print(path)
-
-            # path.append(node.val)
-            # cs += node.val
-            # print(path)
-            move(node.right,cs+node.val)
-            # path.pop()
-            # cs -= node.val
-            # print(path)
+            dfs(node.left,cs)
+            dfs(node.right,cs)
             return 
 
-
         def explore(node,cs):
-            nonlocal ct
             if not node:
                 return 
 
-            move(node,cs)
+            dfs(node,cs)
 
             explore(node.left,cs)
-            print("first iter")
             explore(node.right,cs)
-            print("second iter")
-            return
-
+        
+        
         explore(root,0)
         return ct
-
-        
