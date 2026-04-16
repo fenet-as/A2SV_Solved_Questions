@@ -1,38 +1,44 @@
 class Solution:
-    def isAdditiveNumber(self, nums: str) -> bool:
-        
+    def isAdditiveNumber(self, num: str) -> bool:
         path = []
 
-        
 
         def explore(i):
-            if i == len(nums):
+            # print(path)
+            if i == len(num):
                 if len(path) >= 3:
                     return True
+                return False
 
             
-            for j in range(i,len(nums)):
-                curr = int(nums[i:j+1])
-                # print("curr " ,curr)
-                if j-i+1 > 1 and nums[i] == "0":
-                    continue
+            for j in range(i,len(num)):
+                val = num[i:j+1]
 
-                
-                
-                if len(path) < 2 or  (len(path) >= 2 and  path[-1] + path[-2] == curr):
-                    path.append(curr)
-                    # print("path ",path)
+                if num[i] == "0" and len(val) > 1:
+                    break
+                val = int(val)
+                    
+                # print("val: ",val)
+
+                if len(path) >= 2:
+                    if path[-1] + path[-2] == val:
+                        path.append(val)
+                        if explore(j+1):
+                            return True
+                        path.pop()
+                        
+                    elif path[-1] + path[-2] > val:
+                        continue
+                    else:
+                        break
+                else:
+                    path.append(val)
                     if explore(j+1):
                         return True
                     path.pop()
-                    # print("path ",path)
-                elif path[-1] + path[-2]  < curr:
-                    break
 
-                
-                
-                    
             return False
 
         return explore(0)
-                
+
+
