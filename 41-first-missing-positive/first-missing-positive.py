@@ -4,7 +4,7 @@ class Solution:
         i = 0
         while i < len(nums):
 
-            while 1 <= nums[i] <= len(nums) and nums[i]-1 != i and nums[nums[i] - 1] != nums[i]:
+            while 1 <= nums[i] <= len(nums) and nums[nums[i] - 1] != nums[i]:
                 vind = nums[i]-1
                 nums[i],nums[vind] = nums[vind] , nums[i]
                 
