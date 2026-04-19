@@ -3,18 +3,24 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
+
+        re = len(nums)-1
+        le = 0
+
+        r = 0
+        while r <= re:
+
+            if nums[r] == 0:
+                nums[le],nums[r] = nums[r],nums[le]
+                le += 1
+                r += 1
+
+            elif nums[r] == 2:
+                nums[re],nums[r] = nums[r],nums[re]
+                re -= 1
+            else:
+                r += 1
+
+            
         
-
-        c = [0]*3
-
-        for e in nums:
-            c[e] += 1
-
-        t = 0
-        for i,v in enumerate(c):
-            while v > 0:
-                nums[t] = i
-                v -= 1
-                t += 1
-
  
