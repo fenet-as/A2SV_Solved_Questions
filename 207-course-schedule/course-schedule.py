@@ -1,41 +1,40 @@
+from collections import defaultdict
+
 class Solution:
-    def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
-
-
-
+    def canFinish(self, numCourses, prerequisites):
         adj = defaultdict(list)
-
-        for u,v in prerequisites:
+        for u, v in prerequisites:
             adj[u].append(v)
 
-        white = 1
-        grey = 2
-        black = 3
+        white, grey, black = 0, 1, 2
+        colors = [white] * numCourses
 
-        colors = { k : white for k in range(numCourses)}
+        for i in range(numCourses):
+            if colors[i] != white:
+                continue
 
-    
-        def dfs(node):
-            colors[node] = grey
-        
-            for nei in adj[node]:
-                if colors[nei] == white:
-                    if dfs(nei):
-                        return True
-                elif colors[nei] == grey:
-                    return True
+            stack = [(i, False)]  # (node, processed_children?)
 
-            colors[node] = black
-            return False
+            while stack:
+                node, processed = stack.pop()
 
-        for n in range(numCourses):
-            if colors[n] == white:
-                if dfs(n):
+                if processed:
+                    colors[node] = black
+                    continue
+
+                if colors[node] == grey:
                     return False
 
+                if colors[node] == black:
+                    continue
+
+                colors[node] = grey
+                stack.append((node, True))  # come back later
+
+                for nei in adj[node]:
+                    if colors[nei] == grey:
+                        return False
+                    if colors[nei] == white:
+                        stack.append((nei, False))
+
         return True
-
-
-
-
-
