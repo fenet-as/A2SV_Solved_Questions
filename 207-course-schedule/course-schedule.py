@@ -5,7 +5,6 @@ class Solution:
 
         adj = defaultdict(list)
 
-
         for u,v in prerequisites:
             adj[u].append(v)
 
@@ -15,36 +14,27 @@ class Solution:
 
         colors = { k : white for k in range(numCourses)}
 
-        cycle = False
-        def dfs(node):
-            nonlocal cycle
-            if cycle:
-                return
-
-            colors[node] = grey
     
-                
+        def dfs(node):
+            colors[node] = grey
+        
             for nei in adj[node]:
-                
-                if colors[nei] == black:
-                    continue
+                if colors[nei] == white:
+                    if dfs(nei):
+                        return True
                 elif colors[nei] == grey:
-                    cycle = True
-                    return
-                else:
-                    dfs(nei)
-                
+                    return True
 
             colors[node] = black
+            return False
 
         for n in range(numCourses):
-            if colors[n] == black:
-                continue
-            dfs(n)
-        
-        if not cycle:
-            return True
-        return False
+            if colors[n] == white:
+                if dfs(n):
+                    return False
+
+        return True
+
 
 
 
