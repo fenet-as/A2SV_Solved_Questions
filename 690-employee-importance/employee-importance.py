@@ -14,22 +14,17 @@ class Solution:
         nodes = {e.id : e for e in employees }
          
         def dfs(node):
-            if not node.subordinates:
-                return node.importance
-
-            t = 0
+            t = node.importance
 
             for nei in  node.subordinates:
                 e = nodes[nei]
                 t += dfs(e)
                 
 
-            return t + node.importance
+            return t
 
-        
-        for e in employees:
-            if e.id == id:
-                return dfs(e)
+    
+        return dfs(nodes[id])
 
 
 
