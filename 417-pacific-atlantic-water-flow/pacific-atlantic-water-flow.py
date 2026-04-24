@@ -15,6 +15,9 @@ class Solution:
 
 
         def dfs(i,j,t):
+
+            if (i,j) in visited[t]:
+                return
             visited[t].add((i,j))
             state[(i,j)][t] = 1                
 
