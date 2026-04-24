@@ -1,5 +1,4 @@
-# d < r1+r2 --- 2 cicles overlap if the ditance between their centers is less that their radius rnages
-# circle have equal radius length on every point
+
 
 import math
 class Solution:
@@ -21,9 +20,7 @@ class Solution:
                 
 
 
-    
-        # print(graph)
-        # ans = 1
+
         def dfs(node,visited):
 
             visited.add(node)
