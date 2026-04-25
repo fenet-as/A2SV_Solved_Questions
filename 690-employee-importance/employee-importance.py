@@ -5,6 +5,7 @@ class Employee:
         self.id = id
         self.importance = importance
         self.subordinates = subordinates
+        #
 """
 
 class Solution:
