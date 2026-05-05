@@ -1,31 +1,44 @@
 class Solution:
     def islandPerimeter(self, grid: List[List[int]]) -> int:
-        direct = [[0,1] , [1,0], [0,-1] , [-1,0]]
+
+        row = len(grid)
+        col = len(grid[0])
+
+        dir = [(1,0),(0,1), (-1,0), (0,-1)]
+
+
+        def inbound(i,j):
+            return 0 <= i < row and 0 <= j < col
+
         visited = set()
-        ans = 0
-        def inbound(r,c):
-            return 0 <= r < len(grid) and 0 <= c < len(grid[0]) and grid[r][c] == 1
+        count = 0
 
-        def dfs(row , col):
-            nonlocal ans
-            visited.add((row,col))
-            
-            for x , y in direct:
-                newr , newc = row + x , col + y
-                if not inbound(newr,newc) :
-                    ans += 1
-                elif (newr,newc) not in visited :
-                    dfs(newr,newc)
-                    
-                   
+
+        def dfs(i,j):
+            nonlocal count
+
+            visited.add((i,j))
+
+            for x,y in dir:
+                nr,nc = i+x,j+y
+
+                if inbound(nr,nc):
+                    if grid[nr][nc] == 0:
+                        count += 1
+                    elif (nr,nc) not in visited:
+                        dfs(nr,nc)
+                else:
+                    count += 1
+
         
 
-        for i in range(len(grid)):
-            for j in range(len(grid[0])):
+        for i in range(row):
+            for j in range(col):
                 if grid[i][j] == 1 and (i,j) not in visited:
-                    visited.add((i , j))
+                    dfs(i,j)
 
-                    dfs(i , j)
-        return ans
 
-        
+        return count
+
+
+             
