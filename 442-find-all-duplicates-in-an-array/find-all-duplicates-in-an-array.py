@@ -1,11 +1,14 @@
 class Solution:
-    def findDuplicates(self, arr: List[int]) -> List[int]:
+    def findDuplicates(self, nums: List[int]) -> List[int]:
         res = []
 
-        for val in arr:
-            ind = abs(val)-1
-            if arr[ind] < 0:
-                res.append(abs(val))
+
+        for e in nums:
+            c_ind = abs(e)-1
+            
+
+            if nums[c_ind] < 0:
+                res.append(c_ind+1)
             else:
-                arr[ind] *= -1
+                nums[c_ind] *= -1
         return res
