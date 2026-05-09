@@ -11,7 +11,7 @@ class Solution:
             return 0 <= i < row and 0 <= j < cols
 
         q = deque()
-        move = 0
+ 
         visited = set()
 
 
@@ -35,7 +35,7 @@ class Solution:
                         res[nr][nc] = res[r][c] + 1
                         visited.add((nr,nc))
                         q.append((nr,nc))
-            move += 1
+
         
 
         
