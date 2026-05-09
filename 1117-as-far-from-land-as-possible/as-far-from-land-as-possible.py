@@ -13,12 +13,7 @@ class Solution:
         q = deque()
         visited = set()
 
-        if all( grid[i][j] == 1 for i in range(row) for j in range(cols)):
-            return -1
-            
-        if all( grid[i][j] == 0 for i in range(row) for j in range(cols)):
-            return -1
-
+      
 
 
         for i in range(row):
@@ -26,6 +21,8 @@ class Solution:
                 if grid[i][j] == 1:
                     q.append((i,j))
                     visited.add((i,j))
+        if len(q) == (row*cols) or len(q) == 0:
+            return -1
             
         def calc(r,c,nr,nc):
             return abs(nr-r) + abs(nc-c)
