@@ -8,6 +8,7 @@ class Solution:
             
             if nums[i] == target:
                 ind = i
+                
                 while ind < len(nums) and nums[ind] == target:
                     res.append(ind)
                     ind += 1
