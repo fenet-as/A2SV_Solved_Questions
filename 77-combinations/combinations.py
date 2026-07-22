@@ -1,20 +1,22 @@
 class Solution:
     def combine(self, n: int, k: int) -> List[List[int]]:
         
-
         res = []
+
         path = []
 
-        def helper(i):
+
+        def move(j):
             if len(path) == k:
-                res.append(path[:])
-                return
+                res.append(path.copy())
+                return True
 
-            for j in range(i,n+1):
-                path.append(j)
-                helper(j+1)
-                path.pop()
-
-            return 
-        helper(1)
+            for i in range(j+1,n+1):
+                path.append(i)
+                if move(i):
+                    path.pop()
+            
+            return True
+        move(0)
         return res
+
