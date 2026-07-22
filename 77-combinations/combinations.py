@@ -8,7 +8,7 @@ class Solution:
 
         def move(j):
             if len(path) == k:
-                res.append(path.copy())
+                res.append(path[:])
                 return True
 
             for i in range(j+1,n+1):
