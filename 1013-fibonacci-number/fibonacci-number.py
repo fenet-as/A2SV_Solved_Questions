@@ -1,16 +1,17 @@
 class Solution:
     def fib(self, n: int) -> int:
-        
+        if n < 2:
+            return n
 
+        cache = [0,1]
+        i = 2
 
-        def fibo(n,cache):
-            if n < 2:
-                return n
+        while i <= n:
+            tm = cache[1]
+            cache[1] = cache[1]+ cache[0]
+            cache[0]=tm
+            i += 1
 
-            if n in cache:
-                return cache[n]
-            cache[n] = fibo(n-1,cache) + fibo(n-2,cache)
-            return cache[n]
+        return cache[1]
 
-        return fibo(n,{})
 
