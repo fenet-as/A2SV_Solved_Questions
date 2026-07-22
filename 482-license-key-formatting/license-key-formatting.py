@@ -1,33 +1,27 @@
 class Solution:
     def licenseKeyFormatting(self, s: str, k: int) -> str:
-        word = list(''.join(s.split("-")))
-
-        chars = []
-
-        for e in word:
-            if e.isalpha():
-                chars.append(e.upper())
-
-            else:
-                chars.append(e)
-
-        dashes = len(chars)//k
-
         ans = []
+        count = 0
 
-        i = len(chars) - k
-        j = len(chars)
-
-        while i >= 0:
-            ans.append(''.join(chars[i:j]))
-            j -= k
-            i -= k
-        if len(chars)%k != 0:
-            ans.append(''.join(chars[:j]))
-
-        ans.reverse()
-
-        return ('-'.join(ans))
-
-
+        res = []
+        for c in s[::-1]:
+            if c != "-":
+                count += 1
+                res.append(c.upper())
+            if count == k:
+                count = 0
+                ans.append(''.join(res))
+                ans.append("-")
+                res = []
+        ans.append(''.join(res))
+     
+        ans = ''.join(ans)
         
+
+        if len(ans) != 0 and ans[-1] == "-":
+            ans = ans[:-1]
+        ans = ans[::-1]
+        
+        return ans 
+
+
