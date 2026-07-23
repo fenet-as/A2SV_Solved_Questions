@@ -1,21 +1,23 @@
 class Solution:
     def climbStairs(self, n: int) -> int:
-        
-     
+        memo = {}
 
-        def rec(c,n,memo):
-            if c == n:
+        def dp(step):
+            # Base case: reached the top
+            if step == n:
                 return 1
 
-            elif c > n:
+            # Base case: went beyond the top
+            if step > n:
                 return 0
-            
-            if c in memo:
-                return memo[c]
 
-            memo[c] = rec(c+1,n,memo) + rec(c+2,n,memo)
+            # Return cached result
+            if step in memo:
+                return memo[step]
 
-            return memo[c]
+            # Take either 1 step or 2 steps
+            memo[step] = dp(step + 1) + dp(step + 2)
 
-        return rec(0,n,{})
+            return memo[step]
 
+        return dp(0)
