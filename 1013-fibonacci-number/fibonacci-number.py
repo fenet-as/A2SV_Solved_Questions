@@ -1,17 +1,22 @@
 class Solution:
     def fib(self, n: int) -> int:
-        if n < 2:
-            return n
 
-        cache = [0,1]
-        i = 2
+        hashmap = {}
 
-        while i <= n:
-            tm = cache[1]
-            cache[1] = cache[1]+ cache[0]
-            cache[0]=tm
-            i += 1
+        def fb(n):
 
-        return cache[1]
+            if n == 0 or n == 1 :return n
 
+            if n-1 not in hashmap: hashmap[n-1] = fb(n-1)
+            if n-2 not in hashmap: hashmap[n-2] = fb(n-2)
+
+            return hashmap[n-1] + hashmap[n-2]
+        
+        return fb(n)
+
+        
+
+
+
+            
 
