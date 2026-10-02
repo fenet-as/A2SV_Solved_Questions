@@ -1,36 +1,28 @@
 class Solution:
-    def generateParenthesis(self, n: int) -> List[str]:
+    def generateParenthesis(self, n: int) -> list[str]:
         
 
-        path = []
+       
         res = []
 
-                    
-        def helper(hml,hmr):
-            if len(path) == 2*n:
-                res.append(''.join(path[:]))
-                return 
-            
-            if hml < n:
-                hml += 1
-                path.append("(")
-                helper(hml,hmr)
-                path.pop()
-                hml -= 1
 
-            if hmr < hml:
-                hmr += 1
-                path.append(")")
-                helper(hml,hmr)
-                path.pop()
-                hmr -= 1
-            return 
+        def bt(o,c,curr):
+            if o == n and c == n:
+                res.append(''.join(curr))
+                return
 
-        helper(0,0)
+
+            if o < n:
+                    curr.append('(')
+                    bt(o+1,c,curr)
+                    curr.pop()
+                
+            if c < o:
+                    curr.append(')')
+                    bt(o,c+1,curr)
+                    curr.pop()
+        bt(0,0,[])
         return res
             
-
-
-             
 
             
